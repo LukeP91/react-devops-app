@@ -1,0 +1,18 @@
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  column-gap: 16px;
+
+  a {
+    font-weight: bold;
+  }
+
+  @include breakpoint(md) {
+    font-size: 18px;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 22px;
+  }
+}

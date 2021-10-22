@@ -1,0 +1,43 @@
+svg {
+  fill: currentColor
+}
+
+svg[hidden] {
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: -1
+}
+
+picture {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+img {
+  border-style: none;
+  max-width: none;
+  user-select: none;
+  vertical-align: top;
+  width: 100%;
+}
+
+
+.aspect-ratio {
+  height: 0;
+  margin: 2.618em 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+
+  iframe {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+}

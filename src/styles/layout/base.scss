@@ -1,0 +1,31 @@
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+
+.container {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.content-wrapper {
+  margin-top: 70px;
+  flex: 1;
+
+  @include breakpoint(lg) {
+    margin-top: 90px;
+  }
+}

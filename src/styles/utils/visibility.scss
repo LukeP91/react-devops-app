@@ -1,0 +1,79 @@
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visible {visibility: visible !important}
+
+.invisible {visibility: hidden !important}
+
+.hidden-xs-up {display: none !important}
+
+@media (max-width: 575px) {
+  .hidden-xs-down {display: none !important}
+}
+
+@media (min-width: 576px) {
+  .hidden-sm-up {display: none !important}
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {display: none !important}
+}
+
+@media (min-width: 768px) {
+  .hidden-md-up {display: none !important}
+}
+
+@media (max-width: 991px) {
+  .hidden-md-down {display: none !important}
+}
+
+@media (min-width: 992px) {
+  .hidden-lg-up {display: none !important}
+}
+
+@media (max-width: 1199px) {
+  .hidden-lg-down {display: none !important}
+}
+
+@media (min-width: 1200px) {
+  .hidden-xl-up {display: none !important}
+}
+
+.hidden-xl-down {display: none !important}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto
+  }
+}
+
+.invisible,
+[data-lazy-image] {
+  visibility: hidden
+}

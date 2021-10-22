@@ -1,0 +1,30 @@
+.page-error {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+  }
+
+  &__404 {
+    color: var(--primary)
+  }
+
+  a {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  p {
+    line-height: 1.75;
+    margin-bottom: var(--spacing-sm);
+  }
+}

@@ -1,0 +1,109 @@
+p {
+  line-height: var(--body-line-height);
+  margin: 1em auto 1em;
+  padding: 0
+}
+
+b, strong, .text--bold {
+  font-weight: bold;
+}
+
+small, .text--sm {
+  font-size: 0.7rem;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-size: calc(var(--type-fontsize-min) + (var(--type-fontsize-max) - var(--type-fontsize-min))/ 2);
+  line-height: 1.5;
+  font-family: var(--font-headline);
+  font-feature-settings: var(--font-headline-feature-settings);
+  font-weight: normal;
+
+  strong {
+    font-weight: inherit
+  }
+}
+
+@supports (font-size:clamp(1em, 2vw, 2em)) {
+  h1, h2, h3, h4 .h1, .h2, .h2-display, .h3, .h4, .type-a, .type-b {
+    font-size: clamp(var(--type-fontsize-min), var(--type-fontsize-value), var(--type-fontsize-max));
+    line-height: clamp(var(--type-lineheight-min), var(--type-lineheight-value), var(--type-lineheight-max))
+  }
+}
+
+h1, .h1 {
+  --type-fontsize-min: 1.625em;
+  --type-fontsize-max: 4em;
+  --type-fontsize-value: 0.73em + 4.36vw;
+  --type-lineheight-min: 1.538461538462;
+  --type-lineheight-max: 1.5;
+  --type-lineheight-value: 1.13em + 6.83vw;
+  font-weight: bold;
+  letter-spacing: -.02em
+}
+
+h2, .h2 {
+  --type-fontsize-min: 1.5em;
+  --type-fontsize-max: 2em;
+  --type-fontsize-value: 1.00em + 1.95vw;
+  --type-lineheight-min: 1.2;
+  --type-lineheight-max: 1.25;
+  --type-lineheight-value: 1.11em + 1.95vw;
+}
+
+h3, .h3 {
+  --type-fontsize-min: 1.125em;
+  --type-fontsize-max: 1.4375em;
+  --type-fontsize-value: 1.02em + 0.53vw;
+  --type-lineheight-min: 1.333333333333;
+  --type-lineheight-max: 1.391304347826;
+  --type-lineheight-value: 1.30em + 0.98vw;
+}
+
+h4, .h4 {
+  font-size: 1em;
+  line-height: 1.5
+}
+
+.heading {
+  color: var(--heading-color, var(--color-gray-L800));
+  position: relative;
+  font-weight: bold;
+
+  &--center {
+    text-align: center
+  }
+}
+
+.text {
+  &--intro {
+    text-align: center;
+    font-size: 1.125em;
+    max-width: 750px;
+    margin: 1.5em auto 2.2em;
+  }
+
+  &--subdued {
+    color: rgba(14, 30, 37, .54);
+  }
+
+  &--uppercase {
+    text-transform: uppercase
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+}

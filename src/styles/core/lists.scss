@@ -1,0 +1,30 @@
+ul,
+ol {
+  margin: 1em auto 0;
+  padding: 0
+}
+
+ul {
+  list-style: none
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    margin-top: var(--spacing-base);
+    margin-bottom: var(--spacing-base);
+  }
+
+  li::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    margin-right: var(--spacing-sm);
+    background-color: var(--primary);
+    width: 0.35em;
+    height: 0.35em;
+    border-radius: 50%;
+  }
+}

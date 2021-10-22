@@ -1,0 +1,33 @@
+.app-header {
+  height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background-color: #FFF;
+  box-shadow: var(--shadow-md);
+
+  @include breakpoint(lg) {
+    height: 90px;
+  }
+}
+
+.app-header__nav-bar {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+.app-header__nav-bar {
+  align-items: center;
+  display: grid;
+  grid-column-gap: 3rem;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+}
+
+.app-header__logo svg {
+  width: 70px;
+
+  @include breakpoint(lg) {
+    width: 140px;
+  }
+}
